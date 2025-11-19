@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    background: #222;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #000;
+    background-color: #87ceeb;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #87ceeb;
+    z-index: 0;
+}
+
+#cat {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    left: 50px;
+    background-color: orange;
+    z-index: 2;
+}
+
+#food, #trap {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+#food { background-color: yellow; }
+#trap { background-color: red; }
+
+#score, #health {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#score { left: 10px; }
+#health { right: 10px; }
+
+#controls {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+#controls button {
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255,255,255,0.7);
+}
